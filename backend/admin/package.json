@@ -25,7 +25,7 @@
   "_resolved": "https://registry.npmjs.org/strapi-admin/-/strapi-admin-3.0.0-alpha.26.2.tgz",
   "_shasum": "c122df1a3ec1cebbefbcde7cd2d5f4dc186638fa",
   "_spec": "strapi-admin@3.0.0-alpha.26.2",
-  "_where": "/home/devnasc/.nvm/versions/node/v10.15.3/lib/node_modules/strapi/node_modules/strapi-generate-admin",
+  "_where": "/home/devasc/.nvm/versions/node/v10.15.2/lib/node_modules/strapi/node_modules/strapi-generate-admin",
   "author": {
     "name": "Strapi"
   },
