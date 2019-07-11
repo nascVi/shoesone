@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "Ensemble",
+  "info": {
+    "name": "label",
+    "description": "The Model created here is to store all shoes from brand to brand"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Nom": {
+      "default": "Adidas",
+      "required": true,
+      "unique": true,
+      "type": "string"
+    },
+    "Description": {
+      "unique": true,
+      "default": "https://www.adidas.fr/",
+      "required": true,
+      "type": "text"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "Stock": {
+      "enum": [
+        "Le nombre d'articles restant."
+      ],
+      "type": "enumeration",
+      "unique": true,
+      "default": "Il reste:",
+      "enumName": "stock",
+      "required": true
+    }
+  }
+}
