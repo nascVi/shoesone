@@ -68,8 +68,8 @@ $RECYCLE.BIN/
 .tmp
 *.log
 *.sql
-data/development
-data/production
+*.sqlite
+*.sqlite3
 
 
 ############################
@@ -80,7 +80,8 @@ data/production
 ssl
 .idea
 nbproject
-
+public/uploads/*
+!public/uploads/.gitkeep
 
 ############################
 # Node.js
@@ -91,7 +92,6 @@ lcov.info
 pids
 logs
 results
-build
 node_modules
 .node_history
 
@@ -102,17 +102,3 @@ node_modules
 
 testApp
 coverage
-
-
-############################
-# Front-end workflow
-############################
-
-bower_components
-
-
-############################
-# Strapi Studio
-############################
-
-config/studio.json
