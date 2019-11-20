@@ -1,23 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './poppie.svg';
 import './App.css';
+
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h1>Bienenuti a Shoes O 972</h1>        
         <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        href="https://instagram.com/shoesoneuf972"
         >
-          Learn React
+          <img src={logo} className="App-logo" alt="poppie" />  
         </a>
+        <p>
+          Paziensa per la ultimate veg
+        </p>
+        <Footer />
       </header>
     </div>
   );
