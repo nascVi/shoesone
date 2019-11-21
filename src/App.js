@@ -3,11 +3,6 @@ import logo from './shoes1.svg';
 import Footer from './components/Footer';
 import './App.css';
 
-import logo from './poppie.svg';
-import './App.css';
-
-import Footer from './components/Footer';
-
 function App() {
   return (
     <div className="App">

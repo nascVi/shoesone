@@ -15,7 +15,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-
   color: #393e46;
 }
 
@@ -26,10 +25,4 @@
 .span {
   color: #55ae95;
   font-weight: 15px;
-}
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
 }
