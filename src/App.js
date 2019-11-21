@@ -12,15 +12,6 @@ function App() {
         <scan className="span">paziensa a la magnana per favor</scan>
         <a href="https://www.instagram.com/shoesone972/"><img src={logo} className="App-logo" alt="logo" /></a>
         <br/>
-        <h1>Bienenuti a Shoes O 972</h1>        
-        <a
-        href="https://instagram.com/shoesoneuf972"
-        >
-          <img src={logo} className="App-logo" alt="poppie" />  
-        </a>
-        <p>
-          Paziensa per la ultimate veg
-        </p>
         <Footer />
       </header>
     </div>
