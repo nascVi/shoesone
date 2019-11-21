@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.4d831597.chunk.css",
-    "main.js": "/static/js/main.843a521b.chunk.js",
-    "main.js.map": "/static/js/main.843a521b.chunk.js.map",
+    "main.js": "/static/js/main.29718102.chunk.js",
+    "main.js.map": "/static/js/main.29718102.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.73f86e5c.js",
     "runtime-main.js.map": "/static/js/runtime-main.73f86e5c.js.map",
     "static/js/2.96a06041.chunk.js": "/static/js/2.96a06041.chunk.js",
     "static/js/2.96a06041.chunk.js.map": "/static/js/2.96a06041.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.fb8a96d1dfd05caa3ff19d0fad3c74d3.js": "/precache-manifest.fb8a96d1dfd05caa3ff19d0fad3c74d3.js",
+    "precache-manifest.bab4d89fa8af6a5d1fc7d8deb7435a52.js": "/precache-manifest.bab4d89fa8af6a5d1fc7d8deb7435a52.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.4d831597.chunk.css.map": "/static/css/main.4d831597.chunk.css.map",
-    "static/media/shoes1.svg": "/static/media/shoes1.fa1514e6.svg"
+    "static/media/shoes1.svg": "/static/media/shoes1.562daf76.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.73f86e5c.js",
     "static/js/2.96a06041.chunk.js",
     "static/css/main.4d831597.chunk.css",
-    "static/js/main.843a521b.chunk.js"
+    "static/js/main.29718102.chunk.js"
   ]
 }

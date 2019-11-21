@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <h1>Benvenuti a Shoes 0 972</h1>
         <p>Non si piace per la venuti di scorson</p>
-        <scan className="span">paziensa a la magnana per favor</scan>
+        <span className="span">paziensa a la magnana per favor</span>
         <a href="https://www.instagram.com/shoesone972/"><img src={logo} className="App-logo" alt="logo" /></a>
         <br/>
         <Footer />
