@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Benvenuti a Shoes 0 972</h1>
-        <p>Non si piace per la venuti di scorson</p>
-        <span className="span">paziensa a la magnana per favor</span>
+        <h1>Shoes 0 972 vous souhaite une excellente shopping expérience</h1>
+        <p>Nos prodduits sont accessibles sur Instagram pour le moment.</p>
+        <span className="span">Pour la Martinique, nous livrons en main propre, dans les 72h.</span>
         <a href="https://www.instagram.com/shoesone972/"><img src={logo} className="App-logo" alt="logo" /></a>
         <br/>
         <Footer />
