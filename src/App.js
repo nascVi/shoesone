@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './shoes1.svg';
-import Footer from './components/Footer';
+import Footer from './components/Globals/Footer';
 import './App.css';
 
 function App() {
