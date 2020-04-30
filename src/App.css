@@ -21,6 +21,10 @@
   color: #55ae95;
 }
 
+.dMartinique:hover {
+  color: #7232bd;
+}
+
 .Imlink {
   border-bottom-color: transparent;
   text-decoration: none;
@@ -28,6 +32,6 @@
 }
 
 .span {
-  color: #55ae95;
+  color: #4c5fd7;
   font-weight: 15px;
 }
