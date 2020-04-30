@@ -21,6 +21,12 @@
   color: #55ae95;
 }
 
+.Imlink {
+  border-bottom-color: transparent;
+  text-decoration: none;
+  color: #c32aa3;
+}
+
 .span {
   color: #55ae95;
   font-weight: 15px;
