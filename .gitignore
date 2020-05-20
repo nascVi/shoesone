@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+/.next
 /.vscode
 .pnp.js
 
