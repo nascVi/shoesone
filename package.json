@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/nascVi/shoesone972.git"
+    "url": "git+https://github.com/nascVi/shoesone.git"
   },
   "author": "lpchamps",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/nascVi/shoesone972/issues"
+    "url": "https://github.com/nascVi/shoesone/issues"
   },
-  "homepage": "https://gitlab.com/nascVi/shoesone972#readme",
+  "homepage": "https://github.com/nascVi/shoesone#readme",
   "dependencies": {
     "@shopify/app-bridge-react": "^1.21.4",
     "@shopify/koa-shopify-auth": "^3.1.61",
