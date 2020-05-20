@@ -1,31 +1,36 @@
 {
-  "name": "teaseance",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
-  },
+  "name": "shoesone",
+  "version": "1.0.0",
+  "description": "shopify version",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/nascVi/shoesone972.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "lpchamps",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/nascVi/shoesone972/issues"
+  },
+  "homepage": "https://gitlab.com/nascVi/shoesone972#readme",
+  "dependencies": {
+    "@shopify/app-bridge-react": "^1.21.4",
+    "@shopify/koa-shopify-auth": "^3.1.61",
+    "@shopify/polaris": "^4.22.0",
+    "@zeit/next-css": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "isomorphic-fetch": "^2.2.1",
+    "js-cookie": "^2.2.1",
+    "koa": "^2.12.0",
+    "koa-session": "^6.0.0",
+    "next": "^9.4.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
