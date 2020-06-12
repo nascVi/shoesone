@@ -7,18 +7,18 @@ const Produit = memo(({ produit }) => {
   const { name, slug, images, price } = produit;
   // console.log(name);
   return (
-    <article className="room">
+    <article className="produit">
       <div className="img-container">
-        <img src={images[0] || defaultImg} alt="single room" />
+        <img src={images[0] || defaultImg} alt="le produit" />
         <div className="price-top">
           <h6>${price}</h6>
           <p>Soldé à 40% : <em>${price + 80}</em></p>
         </div>
-        <Link to={`/produits/${slug}`} className="btn-primary room-link">
+        <Link to={`/produits/${slug}`} className="btn-primary produit-link">
           description du produit
         </Link>
       </div>
-      <p className="room-info">{name}</p>
+      <p className="produit-info">{name}</p>
     </article>
   );
 });

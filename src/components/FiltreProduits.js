@@ -58,23 +58,23 @@ const FiltreProduits = ({ produits }) => {
           </select>
         </div>
         {/* end of select type */}
-        {/* guests  */}
+        {/* Stock amount  */}
         <div className="form-group">
-          <label htmlFor="capacity">En stock</label>
+          <label htmlFor="stock">En stock</label>
           <select
             name="stock"
             id="stock"
             onChange={handleChange}
             className="form-control"
-            value={stockitems}
+            value={stock}
           >
-            {stock}
+            {stockitems}
           </select>
         </div>
-        {/* end of guests */}
-        {/* room price */}
+        {/* end of Stock amount */}
+        {/* product price */}
         <div className="form-group">
-          <label htmlFor="price">Budjet ${price}</label>
+          <label htmlFor="price">Budjet €{price}</label>
           <input
             type="range"
             name="price"
@@ -86,8 +86,8 @@ const FiltreProduits = ({ produits }) => {
             className="form-control"
           />
         </div>
-        {/* end of room price*/}
-        {/* size */}
+        {/* end of product price*/}
+        {/* size selection */}
         <div className="form-group">
           <label htmlFor="price">Par La Taille</label>
           <div className="size-inputs">
@@ -107,7 +107,7 @@ const FiltreProduits = ({ produits }) => {
             />
           </div>
         </div>
-        {/* end of select type */}
+        {/* end of size selection */}
         {/* extras */}
         <div className="form-group">
           <div className="single-extra">

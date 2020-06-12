@@ -4,7 +4,7 @@ import Loading from "./Loading";
 import FiltreProduits from "./FiltreProduits";
 import ListeProduits from "./ListeProduits";
 
-function ContainerProduits({ context }) {
+function ContainerProduit({ context }) {
   const { loading, produitsOrdonnes, produits } = context;
   if (loading) {
     return <Loading />;
@@ -17,7 +17,7 @@ function ContainerProduits({ context }) {
   );
 }
 
-export default withProduitConsumer(ContainerProduits);
+export default withProduitConsumer(ContainerProduit);
 
 // import React from "react";
 // import { RoomConsumer } from "../context";

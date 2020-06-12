@@ -133,7 +133,8 @@ h6 {
 }
 
 .show-nav {
-  height: 100px;
+  margin-top: 2em;
+  height: 220px;
 }
 @media screen and (min-width: 768px) {
   .nav-btn {
@@ -270,12 +271,12 @@ h6 {
   }
 }
 /*end of services */
-/* featured rooms */
+/* featured produits */
 
-.featured-rooms {
+.featured-produits {
   padding: 5rem 0;
 }
-.featured-rooms-center {
+.featured-produits-center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -284,24 +285,24 @@ h6 {
   grid-column-gap: 40px;
 }
 @media screen and (min-width: 776px) {
-  .featured-rooms-center {
+  .featured-produits-center {
     width: 90vw;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
 }
 @media screen and (min-width: 992px) {
-  .featured-rooms-center {
+  .featured-produits-center {
     width: 95vw;
     max-width: 1170px;
   }
 }
-/* end pf featured rooms */
-/* room */
-.room {
+/* end pf produits */
+/* produit */
+.produit {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
 }
-.room:hover {
+.produit:hover {
   box-shadow: var(--darkShadow);
 }
 
@@ -331,7 +332,7 @@ h6 {
   font-weight: 300;
   letter-spacing: var(--mainSpacing);
 }
-.room-link {
+.produit-link {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -347,10 +348,10 @@ h6 {
 .img-container:hover .price-top {
   opacity: 0;
 }
-.img-container:hover .room-link {
+.img-container:hover .produit-link {
   transform: translate(-50%, -50%) scale(1);
 }
-.room-info {
+.produit-info {
   background: var(--darkGrey);
   text-transform: capitalize;
   padding: 0.5rem 0;
@@ -358,13 +359,13 @@ h6 {
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
 }
-/* end of room  */
-/* single room*/
+/* end of produit  */
+/* single produit */
 
-.single-room {
+.single-produit {
   padding: 5rem 0 0 0;
 }
-.single-room-images {
+.single-produit-images {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -372,11 +373,11 @@ h6 {
   grid-row-gap: 2rem;
   grid-column-gap: 50px;
 }
-.single-room-images img {
+.single-produit-images img {
   width: 100%;
   display: block;
 }
-.single-room-info {
+.single-produit-info {
   width: 80vw;
   display: grid;
   grid-template-columns: 1fr;
@@ -402,11 +403,11 @@ h6 {
 .info h6 {
   font-weight: 300;
 }
-.room-extras {
+.produit-extras {
   width: 80vw;
   margin: 0 auto 3rem auto;
 }
-.room-extras h6 {
+.produit-extras h6 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
@@ -418,13 +419,13 @@ h6 {
   grid-row-gap: 1rem;
 }
 @media screen and (min-width: 992px) {
-  .single-room-images,
-  .single-room-info,
-  .room-extras {
+  .single-produit-images,
+  .single-produit-info,
+  .produit-extras {
     width: 95vw;
     max-width: 1170px;
   }
-  .single-room-info {
+  .single-produit-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
@@ -433,12 +434,12 @@ h6 {
     padding-left: 3rem;
   }
 }
-/* end of single room*/
-/* roomlist */
-.roomslist {
+/* end of single produit */
+/* produitlist */
+.produitslist {
   padding: 5rem 0;
 }
-.roomslist-center {
+.produitslist-center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -448,18 +449,18 @@ h6 {
 }
 
 @media screen and (min-width: 776px) {
-  .roomslist-center {
+  .produitslist-center {
     width: 90vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .roomslist-center {
+  .produitslist-center {
     width: 95vw;
     max-width: 1170px;
   }
 }
-/* end of roomlist */
-/*  rooms fitler*/
+/* end of produitlist */
+/*  produits fitler*/
 .filter-container {
   padding: 5rem 0;
 }
@@ -510,4 +511,4 @@ h6 {
     max-width: 1170px;
   }
 }
-/* end of rooms fitler*/
+/* end of produits fitler*/

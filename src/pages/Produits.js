@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
-import ContainerProduits from "../components/ContainerProduits";
+import ContainerProduit from "../components/ContainerProduit";
 const Produits = () => {
   return (
     <>
@@ -13,7 +13,7 @@ const Produits = () => {
           </Link>
         </Banner>
       </Hero>
-      <ContainerProduits />
+      <ContainerProduit />
     </>
   );
 };

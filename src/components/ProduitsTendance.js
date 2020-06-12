@@ -13,9 +13,9 @@ export default class ProduitsTendance extends Component {
       return <Produit key={produit.id} produit={produit} />;
     });
     return (
-      <section className="featured-rooms">
+      <section className="featured-produits">
         <Title title="Les Tendances" />
-        <div className="featured-rooms-center">
+        <div className="featured-produits-center">
           {loading ? <Loading /> : produits}
         </div>
       </section>

@@ -33,7 +33,7 @@ getData = async () => {
 
     let produitsTendance = produits.filter(produit => produit.featured === true);
     let maxPrice = Math.max(...produits.map(item => item.price));
-    let maxSize = Math.max(...produits.map(item => item.size));
+    let maxSize = Math.max(...produits.map(item => item.size[0]));
     
     this.setState({
       produits,
@@ -110,14 +110,14 @@ getData = async () => {
 
     let tempProduits = [...produits];
     // transform values
-    // get capacity
+    // get stock
     stock = parseInt(stock);
     price = parseInt(price);
     // filter by type
     if (type !== "all") {
       tempProduits = tempProduits.filter(produit => produit.type === type);
     }
-    // filter by capacity
+    // filter by stock
     if (stock !== 1) {
       tempProduits = tempProduits.filter(produit => produit.stock >= stock);
     }
@@ -127,13 +127,13 @@ getData = async () => {
     tempProduits = tempProduits.filter(
       produit => produit.size >= minSize && produit.size <= maxSize
     );
-    //filter by breakfast
+    //filter by service
     if (service) {
       tempProduits = tempProduits.filter(produit => produit.service === true);
     }
-    //filter by pets
+    //filter by custom
     if (custom) {
-      tempProduits = tempProduits.filter(produit => produit.pets === true);
+      tempProduits = tempProduits.filter(produit => produit.custom === true);
     }
     this.setState({
       produitsOrdonnes: tempProduits

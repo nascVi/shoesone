@@ -4,13 +4,13 @@ const ListeProduits = ({ produits }) => {
   if (produits.length === 0) {
     return (
       <div className="empty-search">
-        <h3>unfortunately no rooms matched your search parameters</h3>
+        <h3>Aucun produits ne correspond à votre recherche</h3>
       </div>
     );
   }
   return (
-    <section className="roomslist">
-      <div className="roomslist-center">
+    <section className="produitslist">
+      <div className="produitslist-center">
         {produits.map(item => {
           return <Produit key={item.id} produit={item} />;
         })}
