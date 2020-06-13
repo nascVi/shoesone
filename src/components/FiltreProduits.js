@@ -40,6 +40,7 @@ const FiltreProduits = ({ produits }) => {
       {item}
     </option>
   ));
+  
   return (
     <section className="filter-container">
       <Title title="chercher dans la boutique" />

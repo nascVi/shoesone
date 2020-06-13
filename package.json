@@ -10,6 +10,7 @@
     "react-icons": "^3.6.1",
     "react-router-dom": "^5.0.0",
     "react-scripts": "^3.4.1",
+    "react-snipcart": "^0.1.6",
     "styled-components": "^4.2.0"
   },
   "scripts": {

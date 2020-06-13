@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import defaultBcg from "../images/requinsonshore.jpeg";
-// import Hero from "../components/Hero";
+
+// import { AddToCart } from 'react-snipcart'
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { ContextProduit } from "../context";
@@ -25,6 +26,7 @@ export default class LeProduit extends Component {
     const { getProduit } = this.context;
     const produit = getProduit(this.state.slug);
 
+
     if (!produit) {
       return (
         <div className="error">
@@ -35,8 +37,10 @@ export default class LeProduit extends Component {
         </div>
       );
     }
+
     const {
       name,
+      // handleChange,
       description,
       stock,
       size,
@@ -68,15 +72,37 @@ export default class LeProduit extends Component {
             <article className="desc">
               <h3>details</h3>
               <p>{description}</p>
+              <br/><br/>
+              <button
+                classId="snipcart-main-container"
+                className="btn btn-primary mt-3 text-capitalize snipcart-overwrite snipcart-add-item snipcart-customer-signin"
+                data-item-id={produit.id}
+                // data-item-image={produit.image.fluid.src}
+                data-item-price={produit.price}
+                data-item-url="http://localhost:3000"
+                data-item-name={produit.name}
+                // data-item-description={produit.image.description}
+                data-item-custom1-name={produit.size}
+                data-item-custom1-options={produit.size[0] || produit.size[1]}
+                >
+                Je prends!
+              </button>
+
             </article>
             <article className="info">
               <h3>info</h3>
-              <h6>price : ${price}</h6>
-              <h6>
-                <select>
-                Taille : {size}[0] 🇺
-                
-                </select>
+              <h6>price : €{price}</h6>
+              <h6>Taille:
+              {/* <select
+                name="size"
+                id="size"
+                onChange={handleChange}
+                className="form-control"
+                value={size}
+              >
+              </select> */}
+              {size}
+                <span className="eu-emoji" role="img" aria-label="eu">🇪🇺</span>
               </h6>
               <h6>
                 Quantité disponible (Pour acheter en gros):
