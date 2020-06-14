@@ -20,7 +20,7 @@ body {
   padding-top: 66px;
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Advent Pro", sans-serif !important;
   line-height: 1.4;
 }
 h1 {
@@ -85,6 +85,23 @@ h6 {
   margin: 2rem 0;
   padding: 1rem;
   letter-spacing: var(--mainSpacing);
+}
+
+.footer {
+  padding-top: 66px;
+  color: var(--mainBlack);
+  background: var(--mainGrey);
+  font-family: "Advent Pro", sans-serif;
+  line-height: 1.4;
+  align-items: center center;
+}
+
+.pro-ref-logo {
+  width: 1000px;
+  height: 720px;
+  background-size: 700px;
+  margin-bottom: 42px;
+  cursor: pointer;
 }
 /* end of globals */
 /* Navbar */

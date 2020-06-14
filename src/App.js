@@ -10,6 +10,7 @@ import Custom from "./pages/Custom"
 import Error from "./pages/Error";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer"
 
 import { Switch, Route } from "react-router-dom";
 
@@ -26,6 +27,7 @@ function App() {
         <Route exact path="/custom/" component={Custom} />
         <Route component={Error} />
       </Switch>
+      <Footer />
     </>
   );
 }
