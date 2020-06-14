@@ -7,6 +7,7 @@ import { Link } from "react-router-dom"
 
 import { useScrollToTop } from './scrolltotop/scrollToTop';
 import ScrollAnimation from 'react-animate-on-scroll'
+// import { Fade } from 'react-reveal'
 import logo from '../images/Wlogo.svg'
 
 const Footer = (props) => {
@@ -14,30 +15,29 @@ const Footer = (props) => {
     return (
         <footer className="footer">
 
-            <ScrollAnimation animateIn='bounceInRight'>
-            <span><img src={logo} width="232" heihgt="230" alt="brand" />™</span> 
-            </ScrollAnimation>
-            <div
-            className="pro-ref-logo"
+            <span
+            className="btt-arrow"
             key={props}
             onClick={() => setScrollToTop(true)}
-            >
-
-            </div>
-            <div className="footer__contactForm">
+            >^
+            </span>
+                <ScrollAnimation className="brand-logo" animateIn='bounceInRight'>
+                <Link to="/shoesone" className="brand-tm"><img src={logo} width="380" height="390" alt="brand" /></Link> 
+                </ScrollAnimation>
+            <div className="footer-sav">
                 <h3>SAV</h3>
             </div>
-            <div className="footer__contactForm">
+            <div className="footer-ml">
                 <h3>Mentions Legales</h3>
             </div>
-            <div className="footer__social">
+            <div className="footer-social">
                 <h3>RESEAUX SOCIAUX</h3>
                 <IoLogoFacebook />
                 <IoLogoInstagram />
                 <IoLogoGithub />
                 <IoLogoWhatsapp />
             </div>
-            <div className="footer__copy">
+            <div className="footer-copy">
                 ©2020 Shoesone - lpChamps` designers
             </div>
             <br />

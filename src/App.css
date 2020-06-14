@@ -88,21 +88,36 @@ h6 {
 }
 
 .footer {
+  width: 100%;
+  position: absolute;
   padding-top: 66px;
   color: var(--mainBlack);
   background: var(--mainGrey);
   font-family: "Advent Pro", sans-serif;
   line-height: 1.4;
-  align-items: center center;
+  align-items: center;
+  text-align: center;
 }
 
 .pro-ref-logo {
-  width: 1000px;
-  height: 720px;
-  background-size: 700px;
-  margin-bottom: 42px;
+  width: 150px;
+  height: 250px;
+  /* z-index: 99 !important; */
+}
+
+.btt-arrow {
+  width: 20px;
+  text-align: right;
   cursor: pointer;
 }
+
+.brand-tm {
+  background-size: 150px;
+  margin-bottom: 42px;
+  text-decoration: none;
+  cursor: default;
+}
+
 /* end of globals */
 /* Navbar */
 .navbar {
