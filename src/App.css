@@ -161,9 +161,7 @@ h6 {
     padding: 0.5rem 0;
   }
 }
-    .loginbtn {
-      color: var(--primaryColor)!important;
-    }
+
 /* end of navbar */
 /* Hero */
 .defaultHero,
