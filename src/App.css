@@ -118,6 +118,7 @@ h6 {
   list-style-type: none;
 }
 .nav-links a {
+  font-family: "Advent Pro", sans-serif !;
   display: block;
   text-decoration: none;
   padding: 1rem 0;
@@ -125,16 +126,21 @@ h6 {
   transition: var(--mainTransition);
   text-align: center;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: var(--mainSpacing);
 }
 .nav-links a:hover {
   color: var(--primaryColor);
 }
 
+.cart{
+  color: var(--primaryColor);
+  margin-top: 0.7em;
+}
+
 .show-nav {
   margin-top: 2em;
-  height: 220px;
+  height: 270px;
 }
 @media screen and (min-width: 768px) {
   .nav-btn {
@@ -155,6 +161,9 @@ h6 {
     padding: 0.5rem 0;
   }
 }
+    .loginbtn {
+      color: var(--primaryColor)!important;
+    }
 /* end of navbar */
 /* Hero */
 .defaultHero,
