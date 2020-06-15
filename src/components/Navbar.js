@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 // import { FaAlignRight } from "react-icons/fa";
 import { FaShoppingBag } from "react-icons/fa"
-import logo from "../images/logo.svg";
+import logo from "../images/Flogo.png";
 
 import HamburgerElastic from './thisam/HamburgerElastic'
 
@@ -14,18 +14,16 @@ export default class Navbar extends Component {
     this.setState({ isOpen: !this.state.isOpen });
   };
 
-  // state = {
-  //   showSideBar: false,
-  // }
-
-  // showSideBar = () => {
-  //   const { showSideBar } = this.state;
-  //   this.setState({ showSideBar: !showSideBar });
-  // }
 
   render() {
     return (
       <nav className="navbar">
+        {/* <div
+          id="snipcart"
+          type="text/javascript"
+          src="https://cdn.snipcart.com/themes/v3.0.15/default/snipcart.js"
+          data-api-key="MTgwMDBmNmEtOTYyYy00MzA5LWFlNWEtM2M2Nzg3OTcyM2NkNjM3MTIwOTM2NDM4OTIxNzc2">
+        </div> */}
         <div className="nav-center">
           <div className="nav-header">
             <HamburgerElastic
@@ -35,8 +33,8 @@ export default class Navbar extends Component {
             barColor="#af9a7d" buttonWidth={16} 
             toggleButton={this.isActive} 
             className="nav-btn nav-icon" />
-            <Link className="nav-logoLink" to="/">
-              <img src={logo} height='35' width='135' alt="Shoesone" />
+            <Link to="/" className="nav-logoLink" to="/">
+              <img src={logo} height='85' width='170' alt="Shoesone" />
             </Link>
             {/* <button
               type="button"

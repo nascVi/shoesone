@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 
 import Home from "./pages/Home";
 import Produits from "./pages/Produits";
@@ -14,6 +14,7 @@ import Footer from "./components/Footer"
 
 import { Switch, Route } from "react-router-dom";
 
+
 function App() {
   return (
     <>
@@ -27,6 +28,7 @@ function App() {
         <Route exact path="/custom/" component={Custom} />
         <Route component={Error} />
       </Switch>
+
       <Footer />
     </>
   );

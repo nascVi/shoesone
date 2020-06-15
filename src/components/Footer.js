@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 import { useScrollToTop } from './scrolltotop/scrollToTop';
 import ScrollAnimation from 'react-animate-on-scroll'
 // import { Fade } from 'react-reveal'
-import logo from '../images/Wlogo.svg'
+import logo from '../images/Flogo.png'
 
 const Footer = (props) => {
     const setScrollToTop = useScrollToTop(true);
@@ -19,23 +19,39 @@ const Footer = (props) => {
             className="btt-arrow"
             key={props}
             onClick={() => setScrollToTop(true)}
-            >^
+            >🌁
             </span>
                 <ScrollAnimation className="brand-logo" animateIn='bounceInRight'>
-                <Link to="/shoesone" className="brand-tm"><img src={logo} width="380" height="390" alt="brand" /></Link> 
+                <Link to="/shoesone" className="brand-tm"><img src={logo} width="190" height="105" alt="brand" /></Link> 
                 </ScrollAnimation>
-            <div className="footer-sav">
-                <h3>SAV</h3>
+            <div className="footer-legals">
+                <div className="footer-legalsCap">
+                -<Link to="/sav" className="footer-legals-ln">    
+                    SAV
+                    </Link>
+                </div>
             </div>
-            <div className="footer-ml">
-                <h3>Mentions Legales</h3>
+            <div className="footer-legals">
+                <div className="footer-legalsCap">
+                -<Link to="/mentionslegales" className="footer-legals-ln">    
+                    Mentions Legales
+                    </Link>
+                </div>
             </div>
-            <div className="footer-social">
-                <h3>RESEAUX SOCIAUX</h3>
-                <IoLogoFacebook />
-                <IoLogoInstagram />
-                <IoLogoGithub />
-                <IoLogoWhatsapp />
+            <div>
+                <h3 className="footer-socialCap">Réseaux Sociaux</h3>
+                <a href="https://www.facebook.com/shoesone972">
+                <IoLogoFacebook className="footer-social"/>
+                </a>
+                <a href="https://www.instagram.com/shoesone972">
+                <IoLogoInstagram className="footer-social"/>
+                </a>
+                <a href="https://github.com/nascVi/shoesone">
+                <IoLogoGithub className="footer-social"/>
+                </a>
+                <a href="https://chat.whatsapp.com/K1L90FRUWeBDZqX49OqgMY">
+                <IoLogoWhatsapp className="footer-social"/>
+                </a>
             </div>
             <div className="footer-copy">
                 ©2020 Shoesone - lpChamps` designers

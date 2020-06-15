@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "contentful": "^7.5.0",
+    "google-map-react": "^1.1.7",
+    "node-sass": "^4.14.1",
     "now": "^19.1.0",
     "react": "^16.8.6",
     "react-animate-on-scroll": "^2.1.5",
@@ -13,6 +15,7 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "^3.4.1",
     "react-snipcart": "^0.1.6",
+    "snipcart-api": "^0.0.9",
     "styled-components": "^4.2.0"
   },
   "scripts": {
