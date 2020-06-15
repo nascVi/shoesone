@@ -33,7 +33,7 @@ export default class Navbar extends Component {
             barColor="#af9a7d" buttonWidth={16} 
             toggleButton={this.isActive} 
             className="nav-btn nav-icon" />
-            <Link to="/" className="nav-logoLink" to="/">
+            <Link to="/" className="nav-logoLink">
               <img src={logo} height='85' width='170' alt="Shoesone" />
             </Link>
             {/* <button
@@ -61,10 +61,10 @@ export default class Navbar extends Component {
               <Link to="/custom">Custom</Link>
             </li>
             <li>
-              <Link
+              <Link to=""
                 className="loginbtn btn snipcart-customer-signin text-capitalize"
-                >
-                  SignUp/In
+              >
+              SignUp/In
               </Link>
             </li>
           </ul>

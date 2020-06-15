@@ -50,7 +50,7 @@ export default class LeProduit extends Component {
       custom,
       images
     } = produit;
-    const [main, ...defaultImages] = images;
+    const [ ...defaultImages] = images;
     console.log(defaultImages);
 
     return (
@@ -74,7 +74,7 @@ export default class LeProduit extends Component {
               <p>{description}</p>
               <br/><br/>
               <button
-                classId="snipcart-main-container"
+                classID="snipcart-main-container"
                 className="btn btn-primary mt-3 text-capitalize snipcart-overwrite snipcart-add-item snipcart-customer-signin"
                 data-item-id={produit.id}
                 // data-item-image={produit.image.fluid.src}

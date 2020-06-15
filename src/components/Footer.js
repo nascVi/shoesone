@@ -19,6 +19,8 @@ const Footer = (props) => {
             className="btt-arrow"
             key={props}
             onClick={() => setScrollToTop(true)}
+            role="img"
+            aria-labelledby="sfbridgetop"
             >🌁
             </span>
                 <ScrollAnimation className="brand-logo" animateIn='bounceInRight'>

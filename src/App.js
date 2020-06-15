@@ -15,9 +15,10 @@ import Footer from "./components/Footer"
 import { Switch, Route } from "react-router-dom";
 
 
-function App() {
+const App = () => {
   return (
-    <>
+    <div>
+    <div id="snipcart" data-api-key={`${process.env.REACT_APP_API_KEY}`}></div>
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -30,7 +31,7 @@ function App() {
       </Switch>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

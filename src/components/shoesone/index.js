@@ -16,6 +16,7 @@ const ShoesoneNine = ({ data }) => (
                 <img
                 src={shoesonePicture}
                 title="shoesonepic"
+                alt="shoes1Pic"
                 />
           <br />
           <br />
@@ -67,7 +68,7 @@ const ShoesoneNine = ({ data }) => (
                 Nous vous répondrons dans de brefs délais (24h maximum).
                 <br />
                 Vous pouvez également nous contacter via Snapchat{" "}
-                <a href="">
+                <a href="/">
                   <img src={snapcode} height="40px" width="40px" alt="snapShoesone" />
                 </a>{" "}
                 ou
