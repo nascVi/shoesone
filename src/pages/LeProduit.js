@@ -116,8 +116,9 @@ export default class LeProduit extends Component {
         <section className="produit-extras">
           <h6>extras </h6>
           <ul className="extras">
+            <u>Vous pouvez selectionner différents options supplémentaires:</u>
             {extras.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={index}><span>{item}</span></li>
             ))}
           </ul>
         </section>

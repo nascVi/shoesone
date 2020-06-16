@@ -176,6 +176,7 @@ h6 {
   position: fixed;
   top: 0;
   left: 0;
+  height: 120px;
   width: 100%;
   padding: 1rem 2rem;
   background: rgba(247,247,247, 0.96);
@@ -228,8 +229,9 @@ h6 {
 }
 
 .show-nav {
-  margin-top: 2em;
+  margin-top: 3.5px;
   height: 270px;
+  background: rgba(247,247,247, 0.98);
 }
 
 @media screen and (min-width: 768px) {
@@ -333,7 +335,7 @@ h6 {
   padding: 5rem 0;
 }
 .services {
-  background: var(--darkGrey);
+  background: var(--offWhite);
   text-align: center;
 }
 .services-center {
@@ -413,6 +415,30 @@ h6 {
   display: block;
   transition: var(--mainTransition);
 }
+
+.qui {
+  margin: 2vh 6vh 1vh 6vh;
+  padding-bottom: 2vh;
+  text-align: center;
+  font-family: "Advent Pro", sans-serif;
+  letter-spacing: 0.10em;
+
+  p {
+    padding-bottom: 2vh;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--primaryColor);
+    }
+}
+
+.shoesone-img{
+  position: relative;
+  margin-top: 80px;
+}
+
+
 .price-top {
   position: absolute;
   top: 0;
@@ -451,12 +477,13 @@ h6 {
   transform: translate(-50%, -50%) scale(1);
 }
 .produit-info {
-  background: var(--darkGrey);
+  background: var(--offWhite);
   text-transform: capitalize;
   padding: 0.5rem 0;
   text-align: center;
-  font-weight: 700;
-  letter-spacing: var(--mainSpacing);
+  font-weight: 499;
+  font-family: "Advent Pro", sans-serif;
+  letter-spacing: 0.10em;
 }
 /* end of produit  */
 /* single produit */
@@ -638,7 +665,7 @@ h6 {
 .faqs p{
   
   margin: 0.5vh 6vh 0vh 6vh;
-  padding-bottom: 1.5vh;
+  padding-bottom: 2vh;
   text-align: center justify;
   font-family: "Advent Pro", sans-serif;
   letter-spacing: 0.10em;
@@ -672,7 +699,7 @@ h6 {
 
 .livraison p {
     margin: 0.5vh 6vh 1vh 6vh;
-    padding-bottom: 1vh;
+    padding-bottom: 2vh;
     text-align: center justify;
     font-family: "Advent Pro", sans-serif;
     letter-spacing: 0.10em;
