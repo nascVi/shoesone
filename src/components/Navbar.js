@@ -18,12 +18,6 @@ export default class Navbar extends Component {
   render() {
     return (
       <nav className="navbar">
-        {/* <div
-          id="snipcart"
-          type="text/javascript"
-          src="https://cdn.snipcart.com/themes/v3.0.15/default/snipcart.js"
-          data-api-key="MTgwMDBmNmEtOTYyYy00MzA5LWFlNWEtM2M2Nzg3OTcyM2NkNjM3MTIwOTM2NDM4OTIxNzc2">
-        </div> */}
         <div className="nav-center">
           <div className="nav-header">
             <HamburgerElastic
@@ -34,22 +28,15 @@ export default class Navbar extends Component {
             toggleButton={this.isActive} 
             className="nav-btn nav-icon" />
             <Link to="/" className="nav-logoLink">
-              <img src={logo} height='85' width='170' alt="Shoesone" />
+              <img src={logo} height='95' width='170' alt="Shoesone" />
             </Link>
-            {/* <button
-              type="button"
-              className=""
-              onClick=
-            >
-              <FaAlignRight className="nav-icon" />
-            </button> */}
             <FaShoppingBag className="cart cart-icon snipcart-checkout snipcart-overwrite" />
           </div>
           <ul
             className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
           >
             <li>
-              <Link to="/shoesone">Shoesone972</Link>
+              <Link to="/shoesone">Qui Nous Sommes?</Link>
             </li>
             <li>
               <Link to="/produits">Boutique</Link>
@@ -59,6 +46,9 @@ export default class Navbar extends Component {
             </li>
             <li>
               <Link to="/custom">Custom</Link>
+            </li>
+            <li>
+              <Link to="/faqs">FAQS</Link>
             </li>
             <li>
               <Link to=""

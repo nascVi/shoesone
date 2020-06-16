@@ -1,15 +1,17 @@
-import React from "react";
-import "./App.scss";
+import React from "react"
+import "./App.scss"
 
-import Home from "./pages/Home";
-import Produits from "./pages/Produits";
-import LeProduit from "./pages/LeProduit";
-import Shoesone from "./pages/Shoesone";
+import Home from "./pages/Home"
+import Produits from "./pages/Produits"
+import LeProduit from "./pages/LeProduit"
+import Shoesone from "./pages/Shoesone"
 import Cleaning from "./pages/Cleaning"
 import Custom from "./pages/Custom"
-import Error from "./pages/Error";
+import FAQS from "./pages/FAQS"
+import CGV from "./pages/CGV"
+import Error from "./pages/Error"
 
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 
 import { Switch, Route } from "react-router-dom";
@@ -27,6 +29,9 @@ const App = () => {
         <Route exact path="/shoesone/" component={Shoesone} />
         <Route exact path="/cleaning/" component={Cleaning} />
         <Route exact path="/custom/" component={Custom} />
+        <Route exact path="/faqs/" component={FAQS} />
+        <Route exact path="/cgv/" component={CGV} />
+        
         <Route component={Error} />
       </Switch>
 
