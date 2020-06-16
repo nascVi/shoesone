@@ -637,7 +637,7 @@ h6 {
 
 .faqs p{
   
-  margin: 1vh 6vh 0vh 6vh;
+  margin: 0.5vh 6vh 0vh 6vh;
   padding-bottom: 1.5vh;
   text-align: center justify;
   font-family: "Advent Pro", sans-serif;
@@ -655,6 +655,32 @@ h6 {
   strong {
     color: var(--primaryColor);
   }
+}
+
+.menleg p{
+  margin: 2vh 6vh 1vh 6vh;
+  padding-bottom: 2vh;
+  text-align: center justify;
+  font-family: "Advent Pro", sans-serif;
+  letter-spacing: 0.10em;
+
+  a {
+    text-decoration: none;
+    color: var(--primaryColor);
+  }
+}
+
+.livraison p {
+    margin: 0.5vh 6vh 1vh 6vh;
+    padding-bottom: 1vh;
+    text-align: center justify;
+    font-family: "Advent Pro", sans-serif;
+    letter-spacing: 0.10em;
+  
+    a {
+      text-decoration: none;
+      color: var(--primaryColor);
+    }
 }
 /* end of legals articles */
 

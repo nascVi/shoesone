@@ -28,12 +28,12 @@ const Footer = (props) => {
             </ScrollAnimation>
             <div className="footer-legals">
                 <div className="footer-legalsCap">
-                    -<Link to="/sav" className="footer-legals-ln">    
-                        SAV
+                    -<Link to="/livraison" className="footer-legals-ln">    
+                        Livraisons
                     </Link>
                 </div>
                 <div className="footer-legalsCap">
-                    -<Link to="/mentionslegales" className="footer-legals-ln">    
+                    -<Link to="/menleg" className="footer-legals-ln">    
                         Mentions Legales
                     </Link>
                 </div>
