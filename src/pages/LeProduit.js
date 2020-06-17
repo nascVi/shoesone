@@ -77,11 +77,11 @@ export default class LeProduit extends Component {
                 classID="snipcart-main-container"
                 className="btn btn-primary mt-3 text-capitalize snipcart-overwrite snipcart-add-item snipcart-customer-signin"
                 data-item-id={produit.id}
-                // data-item-image={produit.image.fluid.src}
+                data-item-image={produit.images}
                 data-item-price={produit.price}
-                data-item-url="http://localhost:3000"
+                data-item-url="http://shoesone-nine.now.sh"
                 data-item-name={produit.name}
-                // data-item-description={produit.image.description}
+                data-item-description={produit.description}
                 data-item-custom1-name={produit.size}
                 data-item-custom1-options={produit.size[0] || produit.size[1]}
                 >
