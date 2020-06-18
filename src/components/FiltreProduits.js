@@ -2,6 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { ContextProduit } from "../context";
 import Title from "./Title";
+
 // get all unique values
 const getUnique = (items, value) => {
   return [...new Set(items.map(item => item[value]))];
@@ -16,8 +17,7 @@ const FiltreProduits = ({ produits }) => {
     price,
     minPrice,
     maxPrice,
-    minSize,
-    maxSize,
+    size,
     service,
     custom,
     stock
@@ -33,14 +33,25 @@ const FiltreProduits = ({ produits }) => {
       {item}
     </option>
   ));
-  // get unique capacity
-  let stockitems = getUnique(produits, "stock");
-  stockitems = stockitems.map((item, index) => (
+  // get unique types
+  let stocks = getUnique(produits, "stock");
+  // add all
+  stocks = [0, ...stocks];
+  // map to jsx
+  stocks = stocks.map((item, index) => (
     <option key={index} value={item}>
       {item}
     </option>
   ));
   
+
+  let sizeitems = getUnique(produits, "size");
+  sizeitems = sizeitems.map((item, index) => (
+    <option key={index} value={item[0]}>
+      {item[0]}
+    </option>
+  ));
+
   return (
     <section className="filter-container">
       <Title title="chercher dans la boutique" />
@@ -69,7 +80,7 @@ const FiltreProduits = ({ produits }) => {
             className="form-control"
             value={stock}
           >
-            {stockitems}
+            {stocks}
           </select>
         </div>
         {/* end of Stock amount */}
@@ -90,23 +101,16 @@ const FiltreProduits = ({ produits }) => {
         {/* end of product price*/}
         {/* size selection */}
         <div className="form-group">
-          <label htmlFor="price">Par La Taille</label>
-          <div className="size-inputs">
-            <input
-              type="number"
-              name="minSize"
-              value={minSize}
-              onChange={handleChange}
-              className="size-input"
-            />
-            <input
-              type="number"
-              name="maxSize"
-              value={maxSize}
-              onChange={handleChange}
-              className="size-input"
-            />
-          </div>
+          <label htmlFor="size">Par la taille</label>
+          <select
+            name="size"
+            id="size"
+            onChange={handleChange}
+            className="form-control"
+            value={size}
+          >
+            {sizeitems}
+          </select>
         </div>
         {/* end of size selection */}
         {/* extras */}

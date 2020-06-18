@@ -6,6 +6,8 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { ContextProduit } from "../context";
 
+import handleChange from '../context'
+
 import StyledHero from "../components/StyledHero";
 
 export default class LeProduit extends Component {
@@ -19,9 +21,6 @@ export default class LeProduit extends Component {
   }
   static contextType = ContextProduit;
 
-  // componentDidMount() {
-  //   console.log(this.props);
-  // }
   render() {
     const { getProduit } = this.context;
     const produit = getProduit(this.state.slug);
@@ -40,18 +39,19 @@ export default class LeProduit extends Component {
 
     const {
       name,
-      // handleChange,
       description,
       stock,
-      size,
       price,
+      size,
       extras,
       service,
       custom,
       images
     } = produit;
     const [ ...defaultImages] = images;
+    const [ ...defaultSizes] = size;
     console.log(defaultImages);
+    console.log(defaultSizes);
 
     return (
       <>
@@ -79,13 +79,12 @@ export default class LeProduit extends Component {
                 data-item-id={produit.id}
                 data-item-image={produit.images}
                 data-item-price={produit.price}
-                data-item-url="https://shoesone-nine.now.sh/produits/:slug"
+                data-item-url="https://shoesone-nine.now.sh/produits/:slug/"
                 data-item-name={produit.name}
                 data-item-description={produit.description}
-                data-item-custom1-name={produit.size}
-                data-item-custom1-options={produit.size}
+                data-item-custom1-name={produit.size[0]}
                 >
-                Je prends!
+                J'ajoute au panier!
               </button>
 
             </article>
@@ -93,20 +92,23 @@ export default class LeProduit extends Component {
               <h3>info</h3>
               <h6>price : €{price}</h6>
               <h6>Taille:
-              {/* <select
+              <select
                 name="size"
                 id="size"
                 onChange={handleChange}
-                className="form-control"
-                value={size}
-              >
-              </select> */}
-              {size}
+                className="form-control"               
+                >
+                {defaultSizes.map((item, index) => (
+                <option key={index} value={item}>
+                  {item}
+                </option>
+                ))}
+              </select>
                 <span className="eu-emoji" role="img" aria-label="eu">🇪🇺</span>
               </h6>
               <h6>
                 Quantité disponible (Pour acheter en gros):
-                {stock > 1 ? `${stock} models` : `Plus que ${stock} model!`}
+                {stock > 1 ? `${stock} paires restantes` : `Plus qu'une paire!`}
               </h6>
               <h6>{custom ? "custom available" : "no custom available yet"}</h6>
               <h6>{service && "1 cleaning de base inclu"}</h6>

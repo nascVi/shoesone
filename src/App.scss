@@ -246,6 +246,16 @@ h6 {
   color: var(--primaryColor);
 }
 
+.loginbtn {
+  margin-left: 1.5vh;
+  padding-top: 6px;
+}
+
+.btn {
+  cursor: pointer;
+  z-index: 99 !important;
+}
+
 .cart{
   margin-left: 2vh;
   font-size: x-large;
@@ -256,7 +266,8 @@ h6 {
 
 .show-nav {
   margin-top: 3.5px;
-  height: 270px;
+  height: 320px;
+  text-align: center;
   background: rgba(247,247,247, 0.98);
 }
 
@@ -490,6 +501,11 @@ h6 {
   transform: scale(0);
   transition: all 0.3s linear;
 }
+
+.produit-discount {
+  color: red;
+}
+
 .img-container:hover {
   background: rgba(0, 0, 0, 0.8);
 }
@@ -673,19 +689,88 @@ h6 {
 }
 /* end of produits fitler*/
 
-/* legals articles */
-.cgv p {
+.cleaningfeats{
+  text-align: center;
+//     display: flex !important;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
   
-  margin: 2vh 6vh 1vh 6vh;
-  padding-bottom: 2vh;
-  text-align: center justify;
-  font-family: "Advent Pro", sans-serif;
-  letter-spacing: 0.10em;
+//     &__item {
+//      display: flex;
+//      flex-basis: calc(33.3% - 30px);
+//      margin-bottom: 60px;
+//      border-right: 1px dotted #fff;
+//      box-sizing: border-box;
+//      padding: 20px 30px 20px 0;
+     
+//      @media #{$small} {
+//        border: none;
+//      }
+  
+//      &:nth-of-type {
+//        border-right: 100px;
+//      }
+//     }
+  
+//     &__name {
+//       padding-top: 1em;
+//       font-family: "Advent Pro", sans-serif !important;
+//       letter-spacing: var(--mainSpacing);
+//       line-height: 1.4;
+//       font-weight: 450;
+//     }
+  
+//     &__thumbnail {
+//      font-size: 95px;
+//      line-height: 100px;
+//     }
+  
+//     &__img {
+//       width: 190px;
+//       height: 180px;
+//     }
+    
+//     &__description {
+//       font-size: 23px !important;
+//       text-transform: uppercase;
+//     }
+  
+//     &__details {
+//       display: flex;
+//       flex-direction: column;
+//       padding-top: 2em;
+//       margin-left: 30px;
+//     }
+  
+//     &__disponible {
+//       flex-grow: 1;
+//       font-family: "Advent Pro", sans-serif !important;
+//       letter-spacing: var(--mainSpacing);
+//       line-height: 1.4;
+//       font-size: 20px;
+//     }
+  
+//     &__prix{
+//       flex-grow: 1;
+//       font-size: 15px;
+//     }
+      
+//   }
 
-  a {
-    text-decoration: none;
-    color: var(--primaryColor);
-  }
+
+// /* legals articles */
+// .cgv p {
+  
+//   margin: 2vh 6vh 1vh 6vh;
+//   padding-bottom: 2vh;
+//   text-align: center justify;
+//   font-family: "Advent Pro", sans-serif;
+//   letter-spacing: 0.10em;
+
+//   a {
+//     text-decoration: none;
+//     color: var(--primaryColor);
+//   }
 }
 
 .faqs p{

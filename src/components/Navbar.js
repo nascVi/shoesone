@@ -50,12 +50,13 @@ export default class Navbar extends Component {
             <li>
               <Link to="/faqs">FAQS</Link>
             </li>
-            <li>
-              <Link to=""
-                className="loginbtn btn snipcart-customer-signin text-capitalize"
+            <li className="loginbtn" >
+              <span
+                className="btn snipcart-customer-signin text-capitalize"
               >
               SignUp/In
-              </Link>
+              </span>
+              
             </li>
           </ul>
         </div>

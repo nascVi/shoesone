@@ -22,7 +22,7 @@ const Particles = ({ children }) => {
                 value: 81
               },
               size: {
-                value: 1
+                value: 2
               },
               shape:{
                 type: "edge"

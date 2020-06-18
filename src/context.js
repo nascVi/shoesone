@@ -12,12 +12,13 @@ export default class ProduitProvider extends Component {
     loading: true,
     //
     type: "all",
-    stock: 1,
+    stock: 0,
+    size: 0,
     price: 0,
     minPrice: 0,
     maxPrice: 0,
-    minSize: 0,
-    maxSize: 0,
+    // minSize: 0,
+    // maxSize: 0,
     service: false,
     custom: false
   };
@@ -33,7 +34,7 @@ getData = async () => {
 
     let produitsTendance = produits.filter(produit => produit.featured === true);
     let maxPrice = Math.max(...produits.map(item => item.price));
-    let maxSize = Math.max(...produits.map(item => item.size[0]));
+    // let maxSize = Math.max(...produits.map(item => item.size[0]));
     
     this.setState({
       produits,
@@ -42,7 +43,7 @@ getData = async () => {
       loading: false,
       price: maxPrice,
       maxPrice,
-      maxSize
+      // maxSize
     });
     } catch (error) {
       console.log(error);
@@ -101,9 +102,10 @@ getData = async () => {
       produits,
       type,
       stock,
+      size,
       price,
-      minSize,
-      maxSize,
+      // minSize,
+      // maxSize,
       service,
       custom
     } = this.state;
@@ -113,6 +115,7 @@ getData = async () => {
     // get stock
     stock = parseInt(stock);
     price = parseInt(price);
+    size = parseInt(size);
     // filter by type
     if (type !== "all") {
       tempProduits = tempProduits.filter(produit => produit.type === type);
@@ -124,9 +127,9 @@ getData = async () => {
     // filter by price
     tempProduits = tempProduits.filter(produit => produit.price <= price);
     //filter by size
-    tempProduits = tempProduits.filter(
-      produit => produit.size >= minSize && produit.size <= maxSize
-    );
+    if (size !== 1) {
+      tempProduits = tempProduits.filter(produit => produit.size >= size);
+    }
     //filter by service
     if (service) {
       tempProduits = tempProduits.filter(produit => produit.service === true);
