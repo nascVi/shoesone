@@ -82,7 +82,7 @@ export default class LeProduit extends Component {
                 data-item-url="https://shoesone-nine.now.sh/produits/:slug/"
                 data-item-name={produit.name}
                 data-item-description={produit.description}
-                data-item-custom1-name={produit.size[0]}
+                data-item-size={produit.size}
                 >
                 J'ajoute au panier!
               </button>
