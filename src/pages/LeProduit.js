@@ -40,7 +40,7 @@ export default class LeProduit extends Component {
     const {
       name,
       description,
-      stock,
+      // stock,
       price,
       size,
       extras,
@@ -82,7 +82,7 @@ export default class LeProduit extends Component {
                 data-item-url="https://shoesone-nine.now.sh/produits/:slug/"
                 data-item-name={produit.name}
                 data-item-description={produit.description}
-                data-item-size={produit.size}
+                data-item-size={produit.size[0]}
                 >
                 J'ajoute au panier!
               </button>
@@ -106,10 +106,9 @@ export default class LeProduit extends Component {
               </select>
                 <span className="eu-emoji" role="img" aria-label="eu">🇪🇺</span>
               </h6>
-              <h6>
-                Quantité disponible (Pour acheter en gros):
+              {/* <h6>
                 {stock > 1 ? `${stock} paires restantes` : `Plus qu'une paire!`}
-              </h6>
+              </h6> */}
               <h6>{custom ? "custom available" : "no custom available yet"}</h6>
               <h6>{service && "1 cleaning de base inclu"}</h6>
             </article>
@@ -117,12 +116,22 @@ export default class LeProduit extends Component {
         </section>
         <section className="produit-extras">
           <h6>extras </h6>
+          <p>
+            <small>
+              <u>
+              Vous pouvez selectionner différents options supplémentaires:
+              </u>
+            </small>
+          </p>
+          <br />
           <ul className="extras">
-            <u>Vous pouvez selectionner différents options supplémentaires:</u>
+            {/* <div> */}
+              
             {extras.map((item, index) => (
-              <li key={index}><span>{item}</span></li>
-            ))}
+              <li key={index}><small>{item}</small></li>
+              ))}
           </ul>
+          {/* </div> */}
         </section>
       </>
     );
