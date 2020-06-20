@@ -9,7 +9,7 @@ const home = () => {
     <>
       <Hero>
         <Banner
-          title="Shoesone972 1er e-sneaker en Martinique"
+          title="Shoesone972 1er site de destockage de sneakers en Martinique"
           subtitle="La meilleurs selection à partir de 75€"
         >
           <Link to="/produits" className="btn-primary">
