@@ -109,7 +109,7 @@ export default class LeProduit extends Component {
               {/* <h6>
                 {stock > 1 ? `${stock} paires restantes` : `Plus qu'une paire!`}
               </h6> */}
-              <h6>{custom ? "custom available" : "no custom available yet"}</h6>
+              <h6>{custom ? "custom possible" : "Pas de custom sur cette paire"}</h6>
               <h6>{service && "1 cleaning de base inclu"}</h6>
             </article>
           </div>

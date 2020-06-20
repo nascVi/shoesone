@@ -9,8 +9,8 @@ const home = () => {
     <>
       <Hero>
         <Banner
-          title="Shoesone972 1er site de destockage de sneakers en Martinique"
-          subtitle="La meilleurs selection à partir de 75€"
+          title="1er site de destockage de sneakers en Martinique"
+          subtitle="La meilleurs selection Shoesone 972 à partir de 75€"
         >
           <Link to="/produits" className="btn-primary">
             Accès à la boutique

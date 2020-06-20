@@ -59,7 +59,9 @@ const Footer = (props) => {
                 </a>
             </div>
             <div className="footer-copy">
+                <small>
                 ©2020 Shoesone - lpChamps` designers
+                </small>
             </div>
             <br />
         </footer>
