@@ -90,7 +90,7 @@ export default class LeProduit extends Component {
             </article>
             <article className="info">
               <h3>info</h3>
-              <h6>price : €{price}</h6>
+              <h6>prix : €{price}</h6>
               <h6>Taille:
               <select
                 name="size"
