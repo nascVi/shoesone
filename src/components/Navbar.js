@@ -25,7 +25,7 @@ export default class Navbar extends Component {
             onClick={this.handleToggle}
             isActive={this.state.isOpen} 
             barColor="#af9a7d" buttonWidth={12}
-            toggleButton={this.isActive} 
+            toggleButton={this.isActive}
             className="nav-btn nav-icon" />
             <Link to="/" className="nav-logoLink">
               <img src={logo} height='55' width='100' alt="Shoesone" />

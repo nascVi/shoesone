@@ -90,8 +90,8 @@ const Custom = ({ data }) => {
         <div className="customLanding">
             <Fade>
                 <Title title="Custom (Concept en cours)"/>
-                    <div >
-                        <img src={img} className="scroll-landing" onClick={() => scrollToLanding('landing')} alt="af1" width="450px" height="200"/>
+                    <div left>
+                        <img src={img} className="scroll-landing" onClick={() => scrollToLanding('landing')} alt="af1" width="340px" height="100"/>
                     </div>
             {/* <div className="hero"> */}
                 {/* <BackgroundVideo className="backgroundVid" /> */}

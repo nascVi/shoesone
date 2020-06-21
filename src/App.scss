@@ -111,17 +111,19 @@ h6 {
 }
 
 .scroll-down {
+  position: absolute;
+  max-width: 100%;
   width: 30px;
-  height: 16px;
-  background: url("/src/images/scroll.svg") no-repeat center;
-  background-size: 25px;
+  height: 80px;
+  // background: url("/src/images/scroll.svg") no-repeat center;
+  background-size: 50px;
   padding-bottom: 50px;
   animation: hovering 1s ease-in-out infinite;
   cursor: pointer;
-  z-index: 99;
 }
 
 .customLanding {
+  max-width: 100%;
   text-align: center;
 }
 
@@ -259,7 +261,7 @@ h6 {
   color: var(--primaryColor) !important;
   margin-left: 0.5vh;
   padding-top: 10px;
-  font-size: 13px;
+  font-size: 14px;
 
   &:hover {
     color: var(--mainBlack) !important;
@@ -556,7 +558,7 @@ h6 {
   padding: 5rem 0 0 0;
 }
 .single-produit-images {
-  width: 80vw;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -819,6 +821,7 @@ h6 {
 }
 
 .menleg p{
+  max-width: 100%;
   margin: 2vh 6vh 1vh 6vh;
   padding-bottom: 2vh;
   text-align: center justify;
