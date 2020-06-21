@@ -256,9 +256,15 @@ h6 {
 }
 
 .loginbtn {
-  margin-left: 1.5vh;
-  padding-top: 7px;
+  color: var(--primaryColor) !important;
+  margin-left: 0.5vh;
+  padding-top: 10px;
   font-size: 13px;
+
+  &:hover {
+    color: var(--mainBlack) !important;
+
+  }
 }
 
 .btn {
@@ -269,10 +275,15 @@ h6 {
 .cart{
   width: 70px;
   margin-left: 26%;
-  font-size: 28px;
+  font-size: 23.5px;
   color: var(--primaryColor);
-  margin-top: 0.45em;
+  margin-top: 0.8em;
   cursor: pointer;
+
+  &:hover {
+    color: var(--mainBlack) !important;
+
+  }
 }
 
 .show-nav {
@@ -292,7 +303,7 @@ h6 {
     display: flex;
   }
   .nav-links {
-    padding-top: 2vh !important;
+    padding-top: 4.5vh !important;
     height: auto;
     display: flex;
     margin-left: 0.5rem;

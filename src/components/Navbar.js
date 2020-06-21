@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-// import { FaAlignRight } from "react-icons/fa";
-import { FaShoppingBag } from "react-icons/fa"
+import { AiOutlineLogin } from "react-icons/ai";
+import { RiShoppingCartLine } from "react-icons/ri"
 import logo from "../images/Flogo.png";
 
 import HamburgerElastic from './thisam/HamburgerElastic'
@@ -30,7 +30,7 @@ export default class Navbar extends Component {
             <Link to="/" className="nav-logoLink">
               <img src={logo} height='55' width='100' alt="Shoesone" />
             </Link>
-            <FaShoppingBag className="cart cart-icon snipcart-checkout snipcart-overwrite" />
+            <RiShoppingCartLine className="cart cart-icon snipcart-checkout snipcart-overwrite" />
           </div>
           <ul
             className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
@@ -54,9 +54,10 @@ export default class Navbar extends Component {
               <span
                 className="btn snipcart-customer-signin text-capitalize"
               >
-              SignUp/In
+              <AiOutlineLogin />
               </span>
-              
+
+            <small>c/i</small>
             </li>
           </ul>
         </div>
