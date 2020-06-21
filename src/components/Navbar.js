@@ -24,11 +24,11 @@ export default class Navbar extends Component {
             id="button" 
             onClick={this.handleToggle}
             isActive={this.state.isOpen} 
-            barColor="#af9a7d" buttonWidth={16}
+            barColor="#af9a7d" buttonWidth={12}
             toggleButton={this.isActive} 
             className="nav-btn nav-icon" />
             <Link to="/" className="nav-logoLink">
-              <img src={logo} height='95' width='170' alt="Shoesone" />
+              <img src={logo} height='55' width='100' alt="Shoesone" />
             </Link>
             <FaShoppingBag className="cart cart-icon snipcart-checkout snipcart-overwrite" />
           </div>
