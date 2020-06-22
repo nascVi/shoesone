@@ -16,7 +16,7 @@ export default class LeProduit extends Component {
     console.log(this.props);
     this.state = {
       slug: this.props.match.params.slug,
-      defaultBcg: defaultBcg
+      defaultBcg
     };
   }
   static contextType = ContextProduit;
@@ -29,7 +29,7 @@ export default class LeProduit extends Component {
     if (!produit) {
       return (
         <div className="error">
-          <h3> Le Produit souhaité n'est pas entré...</h3>
+          <h3> Le Produit recherché n'existe pas...</h3>
           <Link to="/produits" className="btn-primary">
             vers tout les produits
           </Link>
@@ -40,9 +40,9 @@ export default class LeProduit extends Component {
     const {
       name,
       description,
-      // stock,
+      stock,
       price,
-      size,
+        size,
       extras,
       service,
       custom,
@@ -106,9 +106,15 @@ export default class LeProduit extends Component {
               </select>
                 <span className="eu-emoji" role="img" aria-label="eu">🇪🇺</span>
               </h6>
-              {/* <h6>
-                {stock > 1 ? `${stock} paires restantes` : `Plus qu'une paire!`}
-              </h6> */}
+              <small className="stockNot"><em><u>
+
+
+                {stock > 3 ? `` : `Il en reste ${stock}!`}
+              </u>
+              </em><span role="img" aria-labelledby="lpChamps" >🙋</span>
+              </small>
+              <br />
+              <br />
               <h6>{custom ? "custom possible" : "Pas de custom sur cette paire"}</h6>
               <h6>{service && "1 cleaning de base inclu"}</h6>
             </article>

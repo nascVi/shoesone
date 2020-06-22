@@ -1,16 +1,12 @@
-import React /*, { useContext , useEffect, useState }*/ from 'react'
+import React from 'react'
 import img from '../images/jojos.svg'
 
 import ReactParticles from 'react-particles-js'
 import { Element,scroller } from 'react-scroll'
 import { Fade } from 'react-reveal'
 
-
 import Title from '../components/Title'
 import CustomLanding from '../components/CustomLanding/Landing'
-
-// Maybe be the Custom Newsletter
-// import Contact from '../Contact'
 
 const Particles = ({ children }) => {
     return (
@@ -61,16 +57,11 @@ const Particles = ({ children }) => {
     );
 }
 
-// const client = require('contentful').createClient({
-//   space: process.env.BOUTIQUE_APP_SPACE,
-//   accessToken:process.env.BOUTIQUE_APP_ACCESS
-// });
 
 function InaSpace({ children }) {
     return (
         <div className="innerSpace">
             <div className="iS-body">{children}</div>
-            {/* Check main for mobiles responsives */}
         </div>
     );
 }
@@ -93,28 +84,13 @@ const Custom = ({ data }) => {
                     <div left>
                         <img src={img} className="scroll-landing" onClick={() => scrollToLanding('landing')} alt="af1" width="340px" height="100"/>
                     </div>
-            {/* <div className="hero"> */}
-                {/* <BackgroundVideo className="backgroundVid" /> */}
-                {/* <div className="wrapper"> */}
-                    {/* <Nav context="home" /> */}
                     <div className="scroll-down" onClick={() => scrollToLanding('footer')} ></div>
                     <h5 className="caption-hint">Sneakers par excellence<span className="home__coffee" role="img" aria-label="coffee"></span></h5>
-                {/* </div> */}
-                {/* </div> */}
+
                 <InaSpace />
                 <Element name="landing">
-                {/* <Element name="brand"> 
-                <Brands brands={data.brands} />
-                Loading...
-                </Element> */}
                   <CustomLanding />
                 </Element>
-                {/* <Element name="info">
-                  <Info />
-                </Element> */}
-                {/* <Element name="contact">
-                  <Contact />
-                </Element> */}
             </Fade>
         </div>
       </Particles>

@@ -20,7 +20,7 @@ export default class ProduitProvider extends Component {
     // minSize: 0,
     // maxSize: 0,
     service: false,
-    custom: false
+    custom: false,
   };
   
 getData = async () => {
@@ -79,9 +79,9 @@ getData = async () => {
     });
     return tempItems;
   }
-  getProduit = slug => {
+  getProduit = (slug) => {
     let tempProduits = [...this.state.produits];
-    const produit = tempProduits.find(produit => produit.slug === slug);
+    const produit = tempProduits.find((produit) => produit.slug === slug);
     return produit;
   };
   handleChange = event => {

@@ -3,7 +3,8 @@ import Title from "./Title";
 import { ContextProduit } from "../context";
 import Produit from "./Produit";
 import Loading from "./Loading";
-export default class ProduitsTendance extends Component {
+
+  export default class ProduitsTendance extends Component {
   static contextType = ContextProduit;
 
   render() {

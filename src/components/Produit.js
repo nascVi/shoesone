@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import defaultImg from "../images/requinsonshore.jpeg";
 import PropTypes from "prop-types";
 import { memo } from "react";
+
 const Produit = memo(({ produit }) => {
   const { name, slug, images, price } = produit;
   // console.log(name);

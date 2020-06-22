@@ -12,6 +12,7 @@
   --darkGrey: #cfcfcf;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 0.25em;
+  --secSpacing: 0.20em;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
@@ -504,19 +505,19 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.3);
   color: var(--mainWhite);
   padding: 0.3rem 0.6rem 0.5rem;
   border-bottom-right-radius: 1rem;
   font-size: 0.5rem;
-  text-align: center;
+  text-align: left;
   transition: var(--mainTransition);
 }
 .price-top h6 {
   margin-bottom: 0;
-  font-size: 0.9rem;
-  font-weight: 300;
-  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: var(--secSpacing);
 }
 .produit-link {
   position: absolute;
@@ -528,6 +529,8 @@ h6 {
 
 .produit-discount {
   color: red;
+  font-weight: 400;
+  letter-spacing: var(--secSpacing);
 }
 
 .img-container:hover {
@@ -597,6 +600,12 @@ h6 {
   margin-left: 0.5em;
   font-size: 20px;
   position: absolute;
+}
+
+.stockNot{
+  color: rgb(47, 255, 134);
+  font-weight: 400;
+  letter-spacing: var(--secSpacing);
 }
 
 .info h6 {
