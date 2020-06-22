@@ -11,6 +11,7 @@ const getUnique = (items, value) => {
 const FiltreProduits = ({ produits }) => {
   // react hooks
   const context = useContext(ContextProduit);
+  console.log(context);
   const {
     handleChange,
     type,
@@ -26,13 +27,13 @@ const FiltreProduits = ({ produits }) => {
   // get unique types
   let types = getUnique(produits, "type");
   // add all
-  types = ["all", ...types];
+  types = ['all',...types];
   // map to jsx
-  types = types.map((item, index) => (
-    <option key={index} value={item}>
+  types = types.map((item, index) => {
+    return <option key={index} value={item}>
       {item}
     </option>
-  ));
+  })
   // get unique types
   let stocks = getUnique(produits, "stock");
   // add all
@@ -69,7 +70,7 @@ const FiltreProduits = ({ produits }) => {
             {types}
           </select>
         </div>
-        {/* end of select type */}
+         {/* end of select type */}
         {/* Stock amount  */}
         <div className="form-group">
           <label htmlFor="stock">En stock</label>

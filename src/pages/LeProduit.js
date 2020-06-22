@@ -111,7 +111,7 @@ export default class LeProduit extends Component {
 
                 {stock > 3 ? `` : `Il en reste ${stock}!`}
               </u>
-              </em><span role="img" aria-labelledby="lpChamps" >🙋</span>
+              </em><span role="img" aria-labelledby="lpChamps" >{stock > 3 ? `` : `🙋`}</span>
               </small>
               <br />
               <br />

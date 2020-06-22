@@ -1,5 +1,6 @@
 import React from "react";
 import Produit from "./Produit";
+
 const ListeProduits = ({ produits }) => {
   if (produits.length === 0) {
     return (
@@ -12,7 +13,7 @@ const ListeProduits = ({ produits }) => {
     <section className="produitslist">
       <div className="produitslist-center">
         {produits.map(item => {
-          return <Produit key={item.id} produit={item} />;
+          return <Produit key={item.name} produit={item} />;
         })}
       </div>
     </section>

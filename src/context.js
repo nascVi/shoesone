@@ -10,8 +10,7 @@ export default class ProduitProvider extends Component {
     produitsOrdonnes: [],
     produitsTendance: [],
     loading: true,
-    //
-    type: "all",
+    type: 'all  ',
     stock: 0,
     size: 0,
     price: 0,
@@ -20,7 +19,7 @@ export default class ProduitProvider extends Component {
     // minSize: 0,
     // maxSize: 0,
     service: false,
-    custom: false,
+    custom: false
   };
   
 getData = async () => {
@@ -86,18 +85,18 @@ getData = async () => {
   };
   handleChange = event => {
     const target = event.target;
-    const value = target.type === "checkbox" ? target.checked : target.value;
-    const name = target.name;
-    console.log(name, value);
+    const value = event.type === "checkbox" ? target.checked : target.value;
+    const name = event.target.name;
+    console.log(`this is ${name}, this is ${value}`);
 
     this.setState(
       {
         [name]: value
-      },
-      this.filterProduits
-    );
+      },this.filtreProduits)
   };
+
   filtreProduits = () => {
+    console.log('hello')
     let {
       produits,
       type,
