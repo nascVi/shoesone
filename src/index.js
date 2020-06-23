@@ -9,7 +9,7 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.render(
   <ProduitProvider>
     <BrowserRouter>
-        <App hidden id="snipcart" data-api-key={process.env.SNIPCART_API_KEY} />
+        <App />
     </BrowserRouter>
   </ProduitProvider>,
   document.getElementById("root")
