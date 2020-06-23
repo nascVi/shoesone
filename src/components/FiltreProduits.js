@@ -11,7 +11,7 @@ const getUnique = (items, value) => {
 const FiltreProduits = ({ produits }) => {
   // react hooks
   const context = useContext(ContextProduit);
-  console.log(context);
+  // console.log(context);
   const {
     handleChange,
     type,
@@ -27,7 +27,7 @@ const FiltreProduits = ({ produits }) => {
   // get unique types
   let types = getUnique(produits, "type");
   // add all
-  types = ['all',...types];
+  types = ['Toutes les tailles',...types];
   // map to jsx
   types = types.map((item, index) => {
     return <option key={index} value={item}>
@@ -47,9 +47,10 @@ const FiltreProduits = ({ produits }) => {
   
 
   let sizeitems = getUnique(produits, "size");
+  sizeitems = [0, ...sizeitems]
   sizeitems = sizeitems.map((item, index) => (
-    <option key={index} value={item[0]}>
-      {item[0]}
+    <option key={index} value={item}>
+      {item}
     </option>
   ));
 
@@ -113,7 +114,7 @@ const FiltreProduits = ({ produits }) => {
             {sizeitems}
           </select>
         </div>
-        {/* end of size selection */}
+        {/* end of size0 selection */}
         {/* extras */}
         <div className="form-group">
           <div className="single-extra">

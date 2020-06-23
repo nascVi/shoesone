@@ -10,7 +10,7 @@ export default class ProduitProvider extends Component {
     produitsOrdonnes: [],
     produitsTendance: [],
     loading: true,
-    type: 'all  ',
+    type: 'all',
     stock: 0,
     size: 0,
     price: 0,
