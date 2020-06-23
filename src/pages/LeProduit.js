@@ -13,7 +13,7 @@ import StyledHero from "../components/StyledHero";
 export default class LeProduit extends Component {
   constructor(props) {
     super(props);
-    console.log(this.props);
+    // console.log(this.props);
     this.state = {
       slug: this.props.match.params.slug,
       defaultBcg
@@ -50,8 +50,8 @@ export default class LeProduit extends Component {
     } = produit;
     const [ ...defaultImages] = images;
     const [ ...defaultSizes] = size;
-    console.log(defaultImages);
-    console.log(defaultSizes);
+    // console.log(defaultImages);
+    // console.log(defaultSizes);
 
     return (
       <>
