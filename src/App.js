@@ -23,7 +23,7 @@ import { Switch, Route } from "react-router-dom";
 const App = () => {
   return (
     <div>
-    <div id="snipcart" data-api-key={`${process.env.REACT_APP_API_KEY}`}></div>
+    <div id="snipcart" data-api-key={`${process.env.REACT_APP_TEST_API_KEY}`}></div>
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
