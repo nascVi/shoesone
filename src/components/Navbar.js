@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineLogin } from "react-icons/ai";
 import { RiShoppingCartLine } from "react-icons/ri"
+import { FcTwoSmartphones } from "react-icons/fc"
 import logo from "../images/Flogo.png";
 
 import HamburgerElastic from './thisam/HamburgerElastic'
@@ -58,6 +59,14 @@ export default class Navbar extends Component {
               </span>
 
             <small>c/i</small>
+            </li>
+            <br />
+            <li className="phoneNum" >
+              <a href="tel:+5960696882892">
+                <FcTwoSmartphones size="14px" /> <small>: +596-06-96-88-28-92</small>
+              </a>
+              
+            
             </li>
           </ul>
         </div>

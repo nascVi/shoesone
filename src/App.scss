@@ -261,7 +261,7 @@ h6 {
 .loginbtn {
   color: var(--primaryColor) !important;
   margin-left: 0.5vh;
-  padding-top: 10px;
+  padding-top: 9px;
   font-size: 14px;
 
   &:hover {
@@ -291,7 +291,7 @@ h6 {
 
 .show-nav {
   margin-top: 17px !important;
-  height: 320px;
+  height: 380px;
   text-align: center;
   background: rgba(247,247,247, 0.98);
 }
@@ -317,6 +317,11 @@ h6 {
   }
 }
 
+.phoneNum {
+  display: inline-block;
+  text-align: center;
+  font-size: 7px;
+}
 /* end of navbar */
 /* Hero */
 .defaultHero,
