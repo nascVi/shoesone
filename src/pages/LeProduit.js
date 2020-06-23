@@ -75,11 +75,11 @@ export default class LeProduit extends Component {
               <br/><br/>
               <button
                 classID="snipcart-main-container"
-                className="btn btn-primary snipcart-checkout snipcart-overwrite snipcart-add-item snipcart-customer-signin"
+                className="btn btn-primary snipcart-checkout snipcart-overwrite snipcart-add-item"
                 data-item-id={produit.id}
                 data-item-image={produit.images}
                 data-item-price={produit.price}
-                data-item-url="/produits/:slug/"
+                data-item-url='/produits/:slug'
                 data-item-name={produit.name}
                 data-item-description={produit.description}
                 data-item-size={produit.size.id}
