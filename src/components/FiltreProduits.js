@@ -27,7 +27,7 @@ const FiltreProduits = ({ produits }) => {
   // get unique types
   let types = getUnique(produits, "type");
   // add all
-  types = ['Toutes',...types];
+  types = [0,...types];
   // map to jsx
   types = types.map((item, index) => {
     return <option key={index} value={item}>
