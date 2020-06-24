@@ -23,7 +23,7 @@ const Shoesone = () => {
             <br/>
             <p><strong><u>NOUS CONTACTER</u></strong></p>
             <p>Pour toute questions n’hésitez par à nous écrire par mail: <a href="mailto:contact@shoesone972.com">contact@shoesone972.com .</a></p>
-            <p><strong>Wé Konten Wé ZOT</strong></p>
+            <p><strong>Nou Konten Wé ZOT</strong></p>
             </div>
             <GoogleMap />
         </Fade>
