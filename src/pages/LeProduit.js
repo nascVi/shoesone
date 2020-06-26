@@ -57,7 +57,6 @@ export default class LeProduit extends Component {
       <>
         <StyledHero img={images[0] || this.state.defaultBcg}>
           <Banner title={`${name}`}>
-      console.log(produit);
             <Link to="/produits" className="btn-primary">
               vers tout les models
             </Link>
