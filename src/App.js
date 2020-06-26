@@ -24,6 +24,7 @@ const App = () => {
   return (
     <div>
     <div id="snipcart" data-api-key={`${process.env.REACT_APP_API_KEY}`}></div>
+    <script src="https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.js"></script>
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
