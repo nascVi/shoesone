@@ -57,6 +57,7 @@ export default class LeProduit extends Component {
       <>
         <StyledHero img={images[0] || this.state.defaultBcg}>
           <Banner title={`${name}`}>
+      console.log(produit);
             <Link to="/produits" className="btn-primary">
               vers tout les models
             </Link>
@@ -66,7 +67,8 @@ export default class LeProduit extends Component {
           <div className="single-produit-images">
             {defaultImages.map((item, index) => (
               <img key={index} src={item} alt={name} />
-            ))}
+              ))
+              }
           </div>
           <div className="single-produit-info">
             <article className="desc">
@@ -77,14 +79,17 @@ export default class LeProduit extends Component {
                 classID="snipcart-main-container"
                 className="btn btn-primary snipcart-checkout snipcart-overwrite snipcart-add-item"
                 data-item-id={produit.id}
+                data-item-name={produit.name}
                 data-item-image={produit.images}
                 data-item-price={produit.price}
-                data-item-url='/produits/:slug'
-                data-item-name={produit.name}
+                data-item-url='/produits/:slug/'
                 data-item-description={produit.description}
-                data-item-size={produit.size.id}
+                data-item-custom1-name={produit.size}
+                data-item-custom1-placeholder="Confirmer la taille choisie, svp ! ex:39"
+                data-item-custom2-name="Nous sommes sur une version beta du site actuellement. Et pour assurer le bon déroulement de la transaction nous vous rappelerons dans un premier temps"
+                data-item-custom2-placeholder="Merci d'indiquer votre numéro de téléphone joint ici, svp"
                 >
-                J'ajoute au panier!
+                J'ajoute au panier! ${produit.price}
               </button>
 
             </article>

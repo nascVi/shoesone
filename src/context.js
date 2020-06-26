@@ -87,7 +87,8 @@ getData = async () => {
     const target = event.target;
     const value = event.type === "checkbox" ? target.checked : target.value;
     const name = event.target.name;
-    console.log(`this is ${name}, this is ${value}`);
+    const id = event.target.id;
+    console.log(`this is ${name}, this is ${value}, this is ${id}`);
 
     this.setState(
       {
