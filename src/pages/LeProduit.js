@@ -76,13 +76,13 @@ export default class LeProduit extends Component {
               <p>{description}</p>
               <br/><br/>
               <button
-                classID="snipcart-main-container"
-                className="btn btn-primary snipcart-checkout snipcart-overwrite snipcart-add-item"
+                id="snipcart-main-container"
+                className="btn btn-primary snipcart-add-item"
                 data-item-id={produit.id}
                 data-item-name={produit.name}
                 data-item-image={produit.images}
                 data-item-price={produit.price}
-                data-item-url="https://shoesone-nine.now.sh/produits"
+                data-item-url="/produits/:slug"
                 data-item-description={produit.description}
                 data-item-custom1-name={produit.size}
                 data-item-custom1-placeholder="Confirmer la taille choisie, svp ! ex:39"
