@@ -82,7 +82,7 @@ export default class LeProduit extends Component {
                 data-item-name={produit.name}
                 data-item-image={produit.images}
                 data-item-price={produit.price}
-                data-item-url='https://shoesone-nine.com/produits/:slug/'
+                data-item-url='/produits/:slug'
                 data-item-description={produit.description}
                 data-item-custom1-name={produit.size}
                 data-item-custom1-placeholder="Confirmer la taille choisie, svp ! ex:39"
