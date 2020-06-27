@@ -42,7 +42,7 @@ export default class LeProduit extends Component {
       description,
       stock,
       price,
-        size,
+      size,
       extras,
       service,
       custom,
@@ -50,100 +50,97 @@ export default class LeProduit extends Component {
     } = produit;
     const [ ...defaultImages] = images;
     const [ ...defaultSizes] = size;
-    // console.log(defaultImages);
     // console.log(defaultSizes);
 
-    return (
-      <>
-        <StyledHero img={images[0] || this.state.defaultBcg}>
-          <Banner title={`${name}`}>
-            <Link to="/produits" className="btn-primary">
-              vers tout les models
-            </Link>
-          </Banner>
-        </StyledHero>
-        <section className="single-produit">
-          <div className="single-produit-images">
-            {defaultImages.map((item, index) => (
-              <img key={index} src={item} alt={name} />
-              ))
-              }
-          </div>
-          <div className="single-produit-info">
-            <article className="desc">
-              <h3>details</h3>
-              <p>{description}</p>
-              <br/><br/>
-              <button
-                id="snipcart-main-container"
-                className="btn btn-primary snipcart-add-item"
-                data-item-id={produit.id}
-                data-item-name={produit.name}
-                data-item-image={produit.images}
-                data-item-price={produit.price}
-                data-item-url={`/produits/${produit.slug}`}
-                data-item-description={produit.description}
-                data-item-custom1-name={produit.size}
-                data-item-custom1-placeholder="Confirmer la taille choisie, svp ! ex:39"
-                data-item-custom2-name="Nous sommes sur une version beta du site actuellement. Et pour assurer le bon déroulement de la transaction nous vous rappelerons dans un premier temps"
-                data-item-custom2-placeholder="Merci d'indiquer votre numéro de téléphone joint ici, svp"
-                >
-                J'ajoute au panier! ${produit.price}
-              </button>
+    return <>
+      <StyledHero img={images[0] || this.state.defaultBcg}>
+        <Banner title={`${name}`}>
+          <Link to="/produits" className="btn-primary">
+            vers tout les models
+          </Link>
+        </Banner>
+      </StyledHero>
+      <section className="single-produit">
+        <div className="single-produit-images">
+          {defaultImages.map((item, index) => (
+            <img key={index} src={item} alt={name} />
+            ))
+            }
+        </div>
+        <div className="single-produit-info">
+          <article className="desc">
+            <h3>details</h3>
+            <p>{description}</p>
+            <br/><br/>
+            <button
+              classID="snipcart-main-container"
+              className="btn btn-primary snipcart-checkout snipcart-add-item snipcart-overwrite"
+              data-item-id={produit.id}
+              data-item-name={produit.name}
+              data-item-image={produit.images}
+              data-item-price={produit.price}
+              data-item-url={'/produits/:' + this.state.slug}
+              data-item-description={produit.description}
+              data-item-custom1-name={produit.size}
+              data-item-custom1-placeholder="Confirmer la taille choisie, svp ! ex:39"
+              data-item-custom2-name="Nous sommes sur une version beta du site actuellement. Et pour assurer le bon déroulement de la transaction nous vous rappelerons dans un premier temps"
+              data-item-custom2-placeholder="Merci d'indiquer votre numéro de téléphone joint ici, svp"
+              >
+              J'ajoute au panier! ${produit.price}
+            </button>
 
-            </article>
-            <article className="info">
-              <h3>info</h3>
-              <h6>prix : €{price}</h6>
-              <h6>Taille:
-              <select
-                name="size"
-                id="size"
-                onChange={handleChange}
-                className="form-control"               
-                >
-                {defaultSizes.map((item, index) => (
-                <option key={index} value={item}>
-                  {item}
-                </option>
-                ))}
-              </select>
-                <span className="eu-emoji" role="img" aria-label="eu">🇪🇺</span>
-              </h6>
-              <small className="stockNot"><em><u>
-
-
-                {stock > 3 ? `` : `Il en reste ${stock}!`}
-              </u>
-              </em><span role="img" aria-labelledby="lpChamps" >{stock > 3 ? `` : `🙋`}</span>
-              </small>
-              <br />
-              <br />
-              <h6>{custom ? "custom possible" : "Pas de custom sur cette paire"}</h6>
-              <h6>{service && "1 cleaning de base inclu"}</h6>
-            </article>
-          </div>
-        </section>
-        <section className="produit-extras">
-          <h6>extras </h6>
-          <p>
-            <small>
-              <u>
-              Vous pouvez selectionner différents options supplémentaires:
-              </u>
-            </small>
-          </p>
-          <br />
-          <ul className="extras">
-            {/* <div> */}
-              
-            {extras.map((item, index) => (
-              <li key={index}><small>{item}</small></li>
+          </article>
+          <article className="info">
+            <h3>info</h3>
+            <h6>prix : €{price}</h6>
+            <h6>Taille:
+            <select
+              name="size"
+              id="size"
+              onChange={handleChange}
+              className="form-control"               
+              >
+              {defaultSizes.map((item, index) => (
+              <option key={index} value={item}>
+                {item}
+              </option>
               ))}
-          </ul>
-          {/* </div> */}
-        </section>
-      </>
-    );
+            </select>
+              <span className="eu-emoji" role="img" aria-label="eu">🇪🇺</span>
+            </h6>
+            <small className="stockNot"><em><u>
+
+
+              {stock > 3 ? `` : `Il en reste ${stock}!`}
+            </u>
+            </em><span role="img" aria-labelledby="lpChamps" >{stock > 3 ? `` : `🙋`}</span>
+            </small>
+            <br />
+            <br />
+            <h6>{custom ? "custom possible" : "Pas de custom sur cette paire"}</h6>
+            <h6>{service && "1 cleaning de base inclu"}</h6>
+          </article>
+        </div>
+      </section>
+      <section className="produit-extras">
+        <h6>extras </h6>
+        <p>
+          <small>
+            <u>
+            Vous pouvez selectionner différents options supplémentaires:
+            </u>
+          </small>
+        </p>
+        <br />
+        <ul className="extras">
+          {/* <div> */}
+            
+          {extras.map((item, index) => (
+            <li key={index}><small>{item}</small></li>
+            ))}
+        </ul>
+        {/* </div> */}
+      </section>
+    </>;
   }
 }

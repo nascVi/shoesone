@@ -53,7 +53,7 @@ export default class Navbar extends Component {
             </li>
             <li className="loginbtn" >
               <span
-                className="btn snipcart-customer-signin text-capitalize"
+                className="btn snipcart-customer-signin snipcart-overwrite"
               >
               <AiOutlineLogin />
               </span>

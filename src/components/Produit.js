@@ -20,6 +20,11 @@ const Produit = memo(({ produit }) => {
         <Link to={`/produits/${slug}`} className="btn-primary produit-link">
           description du produit
         </Link>
+        <Link to={`/produits/${slug}`} className="btn-primary produit-link">
+          description du produit
+        </Link>
+        <br />
+        <br />
       </div>
       <p className="produit-info">{name}</p>
     </article>
