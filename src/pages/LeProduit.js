@@ -38,6 +38,7 @@ export default class LeProduit extends Component {
     }
 
     const {
+      id,
       name,
       description,
       stock,
@@ -50,7 +51,10 @@ export default class LeProduit extends Component {
     } = produit;
     const [ ...defaultImages] = images;
     const [ ...defaultSizes] = size;
-    // console.log(defaultSizes);
+    console.log(id);
+    console.log(name);
+    console.log(price)
+    console.log(produit.slug);
 
     return <>
       <StyledHero img={images[0] || this.state.defaultBcg}>
@@ -75,24 +79,24 @@ export default class LeProduit extends Component {
             <button
               classID="snipcart-main-container"
               className="btn btn-primary snipcart-checkout snipcart-add-item snipcart-overwrite"
-              data-item-id={produit.id}
-              data-item-name={produit.name}
+              data-item-id={id}
+              data-item-name={name}
+              data-item-url={`/produits/${produit.slug}`}
               data-item-image={produit.images}
-              data-item-price={produit.price}
-              data-item-url="/produits/slug"
+              data-item-price={produit.price} 
               data-item-description={produit.description}
               data-item-custom1-name={produit.size}
               data-item-custom1-placeholder="Confirmer la taille choisie, svp ! ex:39"
               data-item-custom2-name="Nous sommes sur une version beta du site actuellement. Et pour assurer le bon déroulement de la transaction nous vous rappelerons dans un premier temps"
               data-item-custom2-placeholder="Merci d'indiquer votre numéro de téléphone joint ici, svp"
               >
-              J'ajoute au panier! ${produit.price}
+              J'ajoute au panier! {price},00€
             </button>
 
           </article>
           <article className="info">
             <h3>info</h3>
-            <h6>prix : €{price}</h6>
+            <h6>prix : {price},00€</h6>
             <h6>Taille:
             <select
               name="size"

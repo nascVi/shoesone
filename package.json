@@ -17,7 +17,6 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "^3.4.1",
     "react-scroll": "^1.7.16",
-    "react-snipcart": "^0.1.6",
     "snipcart-api": "^0.0.9",
     "styled-components": "^4.2.0"
   },

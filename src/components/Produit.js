@@ -12,14 +12,11 @@ const Produit = memo(({ produit }) => {
       <div className="img-container">
         <img src={images[0] || defaultImg} alt="le produit" />
         <div className="price-top">
-          <h6>{price}€</h6>
+          <h6>{price+".00"}€</h6>
             <p className="produit-discount">
-            {comprice === 0 ?  `` : `Soldé de l'initiale ${comprice}€`}
+            {comprice === 0 ?  `` : `Soldé de l'initiale ${comprice+".00"}€`}
             </p>
         </div>
-        <Link to={`/produits/${slug}`} className="btn-primary produit-link">
-          description du produit
-        </Link>
         <Link to={`/produits/${slug}`} className="btn-primary produit-link">
           description du produit
         </Link>

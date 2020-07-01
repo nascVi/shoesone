@@ -97,7 +97,6 @@ getData = async () => {
   };
 
   filtreProduits = () => {
-    console.log('hello')
     let {
       produits,
       type,
