@@ -27,7 +27,7 @@ const FiltreProduits = ({ produits }) => {
   // get unique types
   let types = getUnique(produits, "type");
   // add all
-  types = [0,...types];
+  types = ["-",...types];
   // map to jsx
   types = types.map((item, index) => {
     return <option key={index} value={item}>
@@ -37,7 +37,7 @@ const FiltreProduits = ({ produits }) => {
   // get unique types
   let stocks = getUnique(produits, "stock");
   // add all
-  stocks = [0, ...stocks];
+  stocks = ["-", ...stocks];
   // map to jsx
   stocks = stocks.map((item, index) => (
     <option key={index} value={item}>
@@ -47,10 +47,10 @@ const FiltreProduits = ({ produits }) => {
   
 
   let sizeitems = getUnique(produits, "size");
-  sizeitems = [0, ...sizeitems]
+  sizeitems = ["-", ...sizeitems]
   sizeitems = sizeitems.map((item, index) => (
     <option key={index} value={item}>
-      {item}
+      {item[0]}
     </option>
   ));
 
@@ -109,7 +109,7 @@ const FiltreProduits = ({ produits }) => {
             id="size"
             onChange={handleChange}
             className="form-control"
-            value={size}
+            value={size[[]]}
           >
             {sizeitems}
           </select>
