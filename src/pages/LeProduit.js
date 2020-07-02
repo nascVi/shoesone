@@ -51,11 +51,14 @@ export default class LeProduit extends Component {
     } = produit;
     const [ ...defaultImages] = images;
     const [ ...defaultSizes] = size;
-    console.log(id);
+    console.log(produit.id);
     console.log(name);
-    console.log(price)
+    console.log(produit.price)
     console.log(produit.slug);
-
+    console.log(description)
+    console.log(images)
+    console.log(size)
+    
     return <>
       <StyledHero img={images[0] || this.state.defaultBcg}>
         <Banner title={`${name}`}>
@@ -82,8 +85,8 @@ export default class LeProduit extends Component {
               data-item-id={id}
               data-item-name={name}
               data-item-url={`/produits/${produit.slug}`}
-              data-item-image={produit.images}
-              data-item-price={produit.price} 
+              data-item-image={images}
+              data-item-price={price} 
               data-item-description={produit.description}
               data-item-custom1-name={produit.size}
               data-item-custom1-placeholder="Confirmer la taille choisie, svp ! ex:39"

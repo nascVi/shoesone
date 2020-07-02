@@ -5,10 +5,11 @@ import PropTypes from "prop-types";
 import { memo } from "react";
 
 const Produit = memo(({ produit }) => {
-  const { name, slug, images, price, comprice} = produit;
-  // console.log(name);
+  const { id, name, slug, images, price, comprice} = produit;
+  console.log(id);
+  console.log(slug)
   return (
-    <article classID={name} className="produit">
+    <article classID={id} className="produit">
       <div className="img-container">
         <img src={images[0] || defaultImg} alt="le produit" />
         <div className="price-top">
@@ -30,6 +31,7 @@ const Produit = memo(({ produit }) => {
 
 Produit.propTypes = {
   produit: PropTypes.shape({
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
