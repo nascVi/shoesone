@@ -26,14 +26,13 @@ getData = async () => {
   try {
     let response = await Client.getEntries({
     content_type: "shoesoneProduit",
-    // order: "sys.createdAt"
-    order: "fields.type"
+    order: "sys.createdAt"
+    // order: "fields.type"
     });
     let produits = this.formatData(response.items);
 
     let produitsTendance = produits.filter(produit => produit.featured === true);
     let maxPrice = Math.max(...produits.map(item => item.price));
-    // let maxSize = Math.max(...produits.map(item => item.size[0]));
     
     this.setState({
       produits,
@@ -41,8 +40,7 @@ getData = async () => {
       produitsOrdonnes: produits,
       loading: false,
       price: maxPrice,
-      maxPrice,
-      // maxSize
+      maxPrice
     });
     } catch (error) {
       console.log(error);
@@ -51,21 +49,6 @@ getData = async () => {
 
   componentDidMount() {
     this.getData()
-    // let rooms = this.formatData(items);
-    // let featuredRooms = rooms.filter(room => room.featured === true);
-    // //
-    // let maxPrice = Math.max(...rooms.map(item => item.price));
-    // let maxSize = Math.max(...rooms.map(item => item.size));
-    // this.setState({
-    //   rooms,
-    //   featuredRooms,
-    //   sortedRooms: rooms,
-    //   loading: false,
-    //   //
-    //   price: maxPrice,
-    //   maxPrice,
-    //   maxSize
-    // });
   }
 
   formatData(items) {
@@ -103,15 +86,12 @@ getData = async () => {
       stock,
       size,
       price,
-      // minSize,
-      // maxSize,
       service,
       custom
     } = this.state;
 
     let tempProduits = [...produits];
-    // transform values
-    // get stock
+    
     stock = parseInt(stock);
     price = parseInt(price);
     size = parseInt(size);

@@ -9,6 +9,8 @@ const defaultProps = {
     zoom: 12,
 }
 
+// Map sort key
+
 const AnyReactComponent = ({ text }) => <div>{text}</div>
 
 const GoogleMap = () => (
