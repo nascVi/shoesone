@@ -61,22 +61,24 @@ getData = async () => {
     });
     return tempItems;
   }
-  getProduit = (slug) => {
+  getProduit = slug => {
     let tempProduits = [...this.state.produits];
-    const produit = tempProduits.find((produit) => produit.slug === slug);
+    const produit = tempProduits.find(produit => produit.slug === slug);
     return produit;
   };
   handleChange = event => {
     const target = event.target;
-    const value = event.type === "checkbox" ? target.checked : target.value;
-    const name = event.target.name;
-    const id = event.target.id;
-    console.log(`this is ${name}, this is ${value}, this is ${id}`);
+    const value = target.type === "checkbox" ? target.checked : target.value;
+    const name = target.name;
+    const id = target.id;
+    console.log(name, value, id);
 
     this.setState(
       {
         [name]: value
-      },this.filtreProduits)
+      },
+      this.filtreProduits
+      );
   };
 
   filtreProduits = () => {
